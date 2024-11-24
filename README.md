@@ -28,27 +28,28 @@ A modern Todo application built with React and Redux Toolkit, featuring a clean 
 
 ### Installation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/sudipsharma826/Todo--Redux-React.git
-```
-
-2. Navigate to the project directory:
-```bash
-cd Todo--Redux-React
-```
-
-3. Install dependencies:
+1. Install dependencies:
 ```bash
 npm install
 ```
 
-4. Start the development server:
+2. Navigate to project directory:
+```bash
+cd todoreact-new
+```
+
+3. Start the development server:
 ```bash
 npm run dev
+# or
+npm start
 ```
 
 The app will be available at `http://localhost:5173`
+
+## Live Preview
+
+Check out the live version of the app at: [Todo App](https://todo.sudipsharma.com.np/)
 
 ## Project Structure
 

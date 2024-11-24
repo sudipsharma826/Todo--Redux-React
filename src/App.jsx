@@ -23,9 +23,9 @@ function App() {
   return (
     <>
     <NavBar />
-    <div className="min-h-screen bg-gradient-to-br from-purple-200 via-white to-blue-200 py-16">
+    <div id="home" className="min-h-screen bg-gradient-to-br from-purple-200 via-white to-blue-200 py-16">
       <div className="max-w-2xl mx-auto px-4">
-        <div className="bg-white/80 backdrop-blur-lg rounded-xl shadow-lg p-8 border border-white/20">
+        <div id ="todo" className="bg-white/80 backdrop-blur-lg rounded-xl shadow-lg p-8 border border-white/20">
           <h1 className="text-4xl font-bold text-center mb-2 bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent">
             Todo List
           </h1>
@@ -88,8 +88,14 @@ function App() {
 
     <div className="py-16 bg-gradient-to-br from-purple-200 via-white to-blue-20">
       
-      <BlogPosts />
-      <CertificateButton />
+      <div id="blogs" className="mt-16">
+        <BlogPosts />
+      </div>
+      
+      <div id="certificates" className="mt-16">
+        <CertificateButton />
+      </div>
+
     </div>
         <footer className="mt-8 text-center">
           <p className="text-gray-600">

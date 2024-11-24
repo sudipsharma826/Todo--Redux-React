@@ -3,6 +3,7 @@ import { createSlice, nanoid } from '@reduxjs/toolkit';
 const initialState = {
   todos: [
     { id: "1", text: "Learn Redux ToolKit  🤙🏾", completed: true },
+    {id: "2", text: "Support the Project  🙏🏻", completed: false  },
   ],
 };
 
