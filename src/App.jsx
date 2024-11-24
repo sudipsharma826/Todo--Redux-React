@@ -1,28 +1,37 @@
-import { useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { addTodo, toggleTodo, deleteTodo } from './features/todoSlice'
+import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { addTodo, toggleTodo, deleteTodo } from './features/todoSlice';
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+import BlogPosts from './components/BlogPosts';
+import CertificateButton from './components/CertificateButton';
+import Info from './components/Info';
 
 function App() {
-  const [input, setInput] = useState('')
-  const dispatch = useDispatch()
-  const todos = useSelector(state => state.todos.todos)
+  const [input, setInput] = useState('');
+  const dispatch = useDispatch();
+  const todos = useSelector(state => state.todostore.todos); // todostore is from the store.js and the todos is fromthe todoSlice.js ,which is the state
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     if (input.trim()) {
-      dispatch(addTodo(input))
-      setInput('')
+      dispatch(addTodo(input));
+      setInput('');
     }
-  }
+  };
 
   return (
+    <>
+    <NavBar />
     <div className="min-h-screen bg-gradient-to-br from-purple-200 via-white to-blue-200 py-16">
       <div className="max-w-2xl mx-auto px-4">
         <div className="bg-white/80 backdrop-blur-lg rounded-xl shadow-lg p-8 border border-white/20">
           <h1 className="text-4xl font-bold text-center mb-2 bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent">
             Todo List
           </h1>
-          <p className="text-center text-gray-600 mb-8 font-medium">Track your tasks and stay productive</p>
+          <p className="text-center text-gray-600 mb-8 font-medium">
+            Track your tasks and stay productive
+          </p>
           
           <form onSubmit={handleSubmit} className="mb-8 flex gap-2">
             <input
@@ -72,8 +81,16 @@ function App() {
               </li>
             ))}
           </ul>
+          <div className='mt-6'>
+      <Info /></div>
         </div>
+        
 
+    <div className="py-16 bg-gradient-to-br from-purple-200 via-white to-blue-20">
+      
+      <BlogPosts />
+      <CertificateButton />
+    </div>
         <footer className="mt-8 text-center">
           <p className="text-gray-600">
             Developed with ❤️ by{' '}
@@ -89,7 +106,9 @@ function App() {
         </footer>
       </div>
     </div>
-  )
+    <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;
