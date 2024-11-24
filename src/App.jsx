@@ -33,19 +33,19 @@ function App() {
             Track your tasks and stay productive
           </p>
           
-          <form onSubmit={handleSubmit} className="mb-8 flex gap-2">
+          <form onSubmit={handleSubmit} className="mb-8 flex flex-col sm:flex-row gap-2">
             <input
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Add a new task..."
-              className="flex-1 px-3 py-3 bg-white border border-gray-200 rounded-2xl text-gray-700 placeholder-zinc-400 outline-none focus:ring-2 focus:ring-indigo-500 transition duration-200"
+              className="flex-1 px-3 py-3 bg-white border border-gray-200 rounded-2xl text-gray-700 placeholder-zinc-400 outline-none focus:ring-2 focus:ring-indigo-500 transition duration-200 w-full"
             />
             <button 
               type="submit"
-              className="px-6 py-3 bg-gradient-to-r from-indigo-600 to-blue-500 text-white font-medium rounded-2xl cursor-pointer hover:opacity-90 active:scale-95 transition duration-200"
+              className="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-indigo-600 to-blue-500 text-white font-medium rounded-2xl cursor-pointer hover:opacity-90 active:scale-95 transition duration-200 mt-2 sm:mt-0"
             >
-              Add
+              Add Task
             </button>
           </form>
 
