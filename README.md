@@ -70,6 +70,10 @@ This project demonstrates:
 - Modern UI design with Tailwind CSS
 - Responsive design principles
 
+Learn More
+
+For a practical example and key concepts of Redux Toolkit, visit this blog: [Redux Toolkit in React.js.](https://www.sudipsharma.com.np/2024/11/redux%20toolkit%20in%20react%20js.html)
+
 ## Developer
 
 **Sudip Sharma**
