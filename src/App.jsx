@@ -10,7 +10,7 @@ import Info from './components/Info';
 function App() {
   const [input, setInput] = useState('');
   const dispatch = useDispatch();
-  const todos = useSelector(state => state.todostore.todos); // todostore is from the store.js and the todos is fromthe todoSlice.js ,which is the state
+  const todos = useSelector(state => state.todo.todos); // todostore is from the store.js and the todos is fromthe todoSlice.js ,which is the state
 
   const handleSubmit = (e) => {
     e.preventDefault();
