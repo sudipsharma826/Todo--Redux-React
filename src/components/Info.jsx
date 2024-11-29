@@ -7,7 +7,7 @@ const Info = () => {
         <p className="text-center text-gray-700">
           <span className="font-semibold">Disclaimer:</span>{' '}
           <em>This Todo App is crafted using</em>{' '}
-          <span className="font-medium text-blue-600">React-Redux Toolkit and redux Persist</span>{' '}
+          <span className="font-medium text-blue-600">React-Redux Toolkit and Redux Persist</span>{' '}
           <em>as a practical learning approach to understand state management in React applications. It serves as a hands-on example of implementing</em>{' '}
           <span className="font-medium text-blue-600">Redux Toolkit</span>{' '}
           <em>in a real-world scenario.</em>
