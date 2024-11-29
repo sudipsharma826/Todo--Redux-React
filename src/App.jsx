@@ -23,7 +23,7 @@ function App() {
 
   return (
     <>
-    <AdSense />
+    
       <NavBar />
       <div id="home" className="min-h-screen bg-gradient-to-br from-purple-200 via-white to-blue-200 py-16">
         <div className="max-w-2xl mx-auto px-4">
@@ -100,7 +100,7 @@ function App() {
         <div id="certificates" className="mt-16">
           <CertificateButton />
         </div>
-        
+
       </div>
       <footer className="mt-8 text-center">
         <p className="text-gray-600">
